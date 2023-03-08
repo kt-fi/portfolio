@@ -94,13 +94,22 @@ header {
   font-family: var(--font-header-small);
   color: var(--color-yellow);
   font-size: 3rem;
+  width: 50%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
+}
+@media (max-width: 550px) {
+  .header__small {
+    width: 80%;
+  }
 }
 .header__quote {
   width: 40%;
   display: flex;
   flex-direction: column;
-  align-items: right;
-  text-align: right;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   padding-right: 5rem;
 }
 @media (max-width: 1000px) {
