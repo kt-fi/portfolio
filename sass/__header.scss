@@ -11,6 +11,11 @@ header {
     flex-wrap: wrap;
     height: 450px;
 
+    @media (max-width: 550px){
+        height: 400px;
+        padding-bottom: 50px
+    }
+
     &__container {
         width: 60%;
         display: flex;
@@ -44,7 +49,7 @@ header {
         flex-direction: column;
         align-items: right;
         text-align: right;
-        justify-content: center;
+        
         padding-right: 5rem;
         @media( max-width: 1000px){
             width: 100%;        
@@ -79,7 +84,7 @@ blockquote {
   @media screen and (max-width: 550px) {
     blockquote {
       top: 78%;
-      font-size: 3rem;
+      font-size: 1.5rem;
       line-height: 6rem;
       text-align: center;
     }
@@ -111,6 +116,6 @@ blockquote {
   }
   @media screen and (max-width: 1000px) {
     #first-letter {
-      font-size: 6rem;
+      font-size: 5rem;
     }
   }
