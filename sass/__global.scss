@@ -1,0 +1,57 @@
+:root{ 
+    //Fonts
+    --font-header-main: 'Bitter', serif;
+    --font-header-small: 'Bitter', serif;
+    --font-first-letter: 'Italiana', serif;
+    --font-main: 'Montserrat', sans-serif;
+    --font-fancy: 'Dancing Script', cursive;
+   //Colors
+    --color-black: #343434;
+    --color-blue: #2D4059;
+    --color-yellow: #FDE9C9;
+    --color-red: #EA5455;
+}
+
+//Root Style
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: rgb(236, 236, 236);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+
+    @media(max-width: 500px) {
+        font-size: 50%;
+      }
+}
+
+body{
+    margin: 0 auto;
+    position: relative;
+    font-size: 2rem;
+    overflow: hidden; 
+}
+
+header{
+  
+}
+
+main {
+    background-color: var(--color-blue);
+}

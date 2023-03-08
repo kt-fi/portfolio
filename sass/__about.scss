@@ -1,0 +1,112 @@
+.about {
+    display: grid;
+    max-width: 1400px;
+    padding: 1rem 0 1rem 0;
+    margin: 0 auto;
+    grid-template-columns:74% 26%;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-blue);
+    height: max-content;
+    font-family: var(--font-main);
+
+    @media only screen and (max-width: 800px) {
+        grid-template-columns: 100%;
+      
+     }   
+    
+    &__header {
+        margin: 20px 0;
+        text-transform: capitalize;
+        font-family: var(--font-header-small);
+        font-weight: 900;
+        color: var(--color-black);
+    }
+
+    &__text--container{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            padding-bottom: 25px;
+            height: min-content;
+            font-weight: 100;
+            width:100%;
+            background-color: var(--color-blue);
+            
+
+        }
+
+        &__text--box {
+            width: 100%;
+            height: min-content;
+            margin: auto;
+            margin-top: 1rem;
+            padding: 1rem 0 2rem 2rem;
+            color: white;
+            background-color: var(--color-blue);
+            text-align: justify;
+            text-justify: inter-word;
+            padding: 2rem 5rem;
+           
+    @media only screen and (max-width: 800px) {
+        padding: 1rem 1rem 2rem 1rem;
+      
+     }   
+
+  
+
+            & h2 {
+                font-weight: 400;
+            }
+
+        }
+   
+
+    &__image--container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 100%;
+        width:100%;
+        padding: 2rem 0 2rem 0;
+        background-color: var(--color-blue);
+
+        
+    }
+
+    &__image--image {
+        align-self: center;
+        justify-self: center;
+        width: 90%   
+    }
+    
+    &__text {
+        font-family: var(--font-main);
+        font-size: 1.8rem;
+
+        &::first-letter {
+            font-size: 5rem;;
+            font-weight: 600;
+            font-family: var(--font-fancy);
+            color: var(--color-red);
+            text-shadow: 1px 1px 1px black;
+        }
+     }
+
+    &__svg-container {
+        text-align: right;
+
+    }
+    &__svg {
+            width: 100%;
+            filter: invert(100%);
+            padding: 2.5vw;
+
+            @media (max-width: 800px){
+                display: none;
+            }
+        }
+ }
+    
